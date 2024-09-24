@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Virtual Event Marketplace</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Virtual Event Marketplace</h1>
+        <form id="eventForm" class="mt-4">
+            <div class="form-group">
+                <input type="text" id="title" class="form-control" placeholder="Event Title" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="category" class="form-control" placeholder="Category" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="price" class="form-control" placeholder="Price" required>
+            </div>
+            <div class="form-group">
+                <textarea id="description" class="form-control" placeholder="Event Description" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" id="image" class="form-control" placeholder="Image URL (optional)">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Create Event</button>
+        </form>
+        <h2 class="mt-5">Upcoming Events</h2>
+        <div id="eventsList" class="mt-4"></div>
+        <div class="form-group">
+            <input type="text" id="category" class="form-control" placeholder="Category (e.g., Concert, Workshop, Classroom)" required>
+        </div>
+        
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

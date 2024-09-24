@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+#eventsList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
